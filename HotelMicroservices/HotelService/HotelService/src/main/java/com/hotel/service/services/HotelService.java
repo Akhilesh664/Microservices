@@ -1,0 +1,25 @@
+package com.hotel.service.services;
+
+import com.hotel.service.entites.Hotel;
+
+import java.util.List;
+
+public interface HotelService {
+
+
+    //create
+    Hotel create(Hotel hotel);
+
+    //get all
+    List<Hotel> getAll();
+
+    //get single
+    Hotel get(String id);
+
+    // delete
+    void delete(String id);
+
+    //update
+
+    Hotel update(String id, Hotel updatedHotel);
+}

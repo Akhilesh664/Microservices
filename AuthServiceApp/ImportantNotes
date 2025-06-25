@@ -1,0 +1,9 @@
+# Step-by-step overview of how JWT (JSON Web Token) authorization works:
+
+User Login: The user submits their credentials (e.g., username and password) to the authentication server.
+Token Generation: Upon successful authentication, the server generates a JWT containing user information and signs it using a secret key.
+Token Delivery: The server sends the JWT back to the client, which stores it (commonly in localStorage or sessionStorage).
+Request with Token: For subsequent requests to protected resources, the client includes the JWT in the HTTP Authorization header using the Bearer schema.
+Token Verification: The server verifies the token's signature and checks its validity (e.g., expiration time).
+Access Granted or Denied: If the token is valid, the server processes the request and grants access; otherwise, it denies the request.
+This process enables stateless authentication, as the server doesn't need to maintain session information; the JWT contains all necessary user data.

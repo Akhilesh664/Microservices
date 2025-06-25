@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Product Review System</h1>
+
+    <!-- Review Submission Form -->
+    <div class="form-section">
+        <h2>Submit a Review</h2>
+        <form id="review-form">
+            <div>
+                <label for="productId">Product ID</label>
+                <input type="text" id="productId" placeholder="Enter product ID" required>
+            </div>
+            <div>
+                <label for="reviewText">Review</label>
+                <textarea id="reviewText" rows="4" placeholder="Write your review" required></textarea>
+            </div>
+            <button type="submit">Submit Review</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <!-- Review List -->
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <table id="reviews-table">
+            <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Review</th>
+                <th>Sentiment</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody id="reviews-body"></tbody>
+        </table>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
